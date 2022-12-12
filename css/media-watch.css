@@ -1,0 +1,10 @@
+@media (max-width: 991px) {
+  .btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-watch {
+    margin: 0.5em;
+  }
+}

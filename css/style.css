@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: Lato;
+  src: url(/fonts/Lato-Regular.ttf);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100vh;
+  margin: auto;
+}
+.btn-result {
+  width: 24.5em;
+  height: 4em;
+  border: none;
+  border-radius: 10px;
+}
+.button {
+  width: 3em;
+  height: 3em;
+  border-radius: 50px;
+  border: none;
+  margin: 5px;
+  font-size: 24px;
+}
+.button:hover {
+  background-color: rgb(218, 216, 216);
+}
+.btn_c {
+  text-transform: uppercase;
+  color: red;
+}
+.btn_char {
+  color: green;
+}
+.btn_equal {
+  background-color: green;
+  color: #fff;
+}
+.btn_equal:hover {
+  background-color: rgb(5, 149, 5);
+}
+.fa-solid {
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  font-family: Lato;
+  color: #fff;
+  font-size: 22px;
+  margin: 0.5em;
+  background-color: rgb(5, 149, 5);
+  padding: 0.3em 3em;
+  border-radius: 9px;
+}
+a:hover {
+  background-color: rgb(8, 169, 8);
+}
+.line-bar {
+  padding-bottom: 5em;
+}
+.line-bar {
+  display: flex;
+  text-align: center;
+}

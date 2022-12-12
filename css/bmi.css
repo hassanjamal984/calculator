@@ -1,0 +1,91 @@
+@font-face {
+  font-family: Lato;
+  src: url(/fonts/Lato-Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+.form-part {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.form-part-color {
+  background-image: linear-gradient(rgb(232, 135, 16), rgb(233, 170, 9));
+}
+.label-size {
+  font-size: 25px;
+  width: 17em;
+  color: #fff;
+}
+input {
+  width: 20em;
+  height: 2.5em;
+  border-radius: 9px;
+  padding-left: 1em;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+.display-input {
+  display: flex;
+}
+.width-label {
+  width: 6em;
+}
+.display-labels {
+  padding-bottom: 1em;
+}
+.btn-part {
+  display: flex;
+  justify-content: center;
+}
+.bmi_result {
+  border: none;
+  width: 9em;
+  height: 2.5em;
+  border-radius: 25px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: Lato;
+}
+.bmi_result:hover {
+  background-image: linear-gradient(rgb(232, 135, 16), rgb(233, 170, 9));
+}
+.btn-part {
+  padding-top: 1em;
+}
+.result-bmi {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 1em;
+  color: #fff;
+}
+a {
+  text-decoration: none;
+  font-family: Lato;
+  color: #fff;
+  font-size: 22px;
+  margin: 0.5em;
+  background-color: rgb(225, 91, 7);
+  padding: 0.3em 3em;
+  border-radius: 9px;
+}
+a:hover {
+  background-color: rgb(235, 96, 10);
+}
+.line-bar {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 3em;
+}

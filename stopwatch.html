@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stop watch</title>
+    <link rel="stylesheet" href="css/stopwatch.css" />
+    <link rel="stylesheet" href="css/media-watch.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-stop-watch">
+        <div class="line-bar">
+          <div class="link-part">
+            <a class="link-nav" href="index.html">Calculator</a>
+          </div>
+          <div class="link-part">
+            <a class="link-nav" href="stopwatch.html">Stop watch</a>
+          </div>
+          <div class="link-part">
+            <a class="link-nav" href="bmi.html">BMI</a>
+          </div>
+        </div>
+
+        <div class="content-stop-watch">
+          <p>
+            <span class="zero" id="seconds">00</span>
+            <span class="zero">:</span>
+            <span class="zero" id="tens">00</span>
+          </p>
+          <div class="btns">
+            <button class="btn-watch" id="start_btn" onclick="start_function()">
+              Start
+            </button>
+            <button class="btn-watch" id="pause_btn" onclick="stop_function()">
+              Pause
+            </button>
+            <button class="btn-watch" id="clear_btn" onclick="clear_function()">
+              Clear
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/calculator.js"></script>
+  </body>
+</html>

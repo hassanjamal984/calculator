@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="line-bar">
+        <div class="link-part">
+          <a class="link-nav" href="index.html">Calculator</a>
+        </div>
+        <div class="link-part">
+          <a class="link-nav" href="stopwatch.html">Stop watch</a>
+        </div>
+        <div class="link-part">
+          <a class="link-nav" href="bmi.html">BMI</a>
+        </div>
+      </div>
+
+      <div class="input-result">
+        <input class="btn-result" type="button" id="btn_id_result" />
+      </div>
+
+      <div class="line-curency">
+        <button
+          class="button btn_char"
+          type="button"
+          value="Sh to $"
+          id="sh_to_dollar"
+          onclick="sh_to_dollar_fn()"
+        >
+          <i class="fa-solid fa-shekel-sign"> </i>
+          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-solid fa-dollar-sign"></i>
+        </button>
+        <button
+          class="button btn_char"
+          type="button"
+          value="$ to Sh"
+          id="dollar_to_sh"
+          onclick="dollar_to_sh_fn()"
+        >
+          <i class="fa-solid fa-dollar-sign"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-solid fa-shekel-sign"> </i>
+        </button>
+        <button
+          class="button btn_char"
+          type="button"
+          value="Sh to Eur"
+          id="sh_to_eur"
+          onclick="sh_to_eur_fn()"
+        >
+          <i class="fa-solid fa-shekel-sign"> </i>
+          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-solid fa-euro-sign"></i>
+        </button>
+        <button
+          class="button btn_char"
+          type="button"
+          value="Eur to Sh"
+          id="eur_to_sh"
+          onclick="eur_to_sh_fn()"
+        >
+          <i class="fa-solid fa-euro-sign"></i>
+          <i class="fa-solid fa-arrow-right"></i>
+          <i class="fa-solid fa-shekel-sign"> </i>
+        </button>
+      </div>
+
+      <div class="line1">
+        <input
+          class="button btn_c"
+          type="button"
+          value="C"
+          id="reset"
+          onclick="reset_fn()"
+        />
+        <input class="button btn_char" type="button" value="()" id="item" />
+        <input class="button btn_char" type="button" value="%" id="item" />
+        <input
+          class="button btn_char"
+          type="button"
+          value="/"
+          id="item"
+          onclick="function_operator('/')"
+        />
+      </div>
+      <div class="line2">
+        <input
+          class="button"
+          type="button"
+          value="7"
+          onclick="function_get(7)"
+          id="item"
+        />
+        <input
+          class="button"
+          type="button"
+          value="8"
+          onclick="function_get(8)"
+          id="item"
+        />
+        <input
+          class="button"
+          type="button"
+          value="9"
+          id="item"
+          onclick="function_get(9)"
+        />
+        <input
+          class="button btn_char"
+          type="button"
+          value="*"
+          id="item"
+          onclick="function_operator('*')"
+        />
+      </div>
+      <div class="line3">
+        <input
+          class="button"
+          type="button"
+          value="4"
+          id="item"
+          onclick="function_get(4)"
+        />
+        <input
+          class="button"
+          type="button"
+          value="5"
+          id="item"
+          onclick="function_get(5)"
+        />
+        <input
+          class="button"
+          type="button"
+          value="6"
+          id="item"
+          onclick="function_get(6)"
+        />
+        <input
+          class="button btn_char"
+          type="button"
+          value="-"
+          id="item"
+          onclick="function_operator('-')"
+        />
+      </div>
+      <div class="line4">
+        <input
+          class="button"
+          type="button"
+          value="1"
+          id="item"
+          onclick="function_get(1)"
+        />
+        <input
+          class="button"
+          type="button"
+          value="2"
+          id="item"
+          onclick="function_get(2)"
+        />
+        <input
+          class="button"
+          type="button"
+          value="3"
+          id="item"
+          onclick="function_get(3)"
+        />
+        <input
+          class="button btn_char"
+          type="button"
+          value="+"
+          id="item"
+          onclick="function_operator('+')"
+        />
+      </div>
+      <div class="line5">
+        <input
+          class="button"
+          type="button"
+          value="+/-"
+          id="opposite_num"
+          onclick="opposite_num()"
+        />
+        <input
+          class="button"
+          type="button"
+          value="0"
+          id="item"
+          onclick="function_get(0)"
+        />
+        <input class="button" type="button" value="." id="item" />
+        <input
+          type="button"
+          class="button btn_equal"
+          value="="
+          id="item_equal"
+          onclick="calculate('equal')"
+        />
+      </div>
+    </div>
+    <p id="test"></p>
+    <script src="js/calculator.js"></script>
+  </body>
+</html>
